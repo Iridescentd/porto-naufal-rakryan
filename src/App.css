@@ -1,11 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+
 body {
-  background-color: #f8f9fa;
+  background-color: #f8f9fa;;
   justify-content: space-between;
+  flex-wrap: wrap;
+  font-family: quicksand;
+  flex-direction: column;
 }
 
 .homepage{
-  /* display: block; */
+  display: block;
+  /* display: flex; */
 }
+
+/* Header */
 
 .logo {
   font-family: 'Neue Regrade';
@@ -23,23 +32,49 @@ body {
 }
 
 
-.header{
-  /* padding-left: 30rem;  */
+.header {
   display: flex;
-  justify-content: space-between;
-  align-items: center; 
+  justify-content: center;
+  align-items: center;
 }
 
-.nav-item a{
-  margin-right: 20px;
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar .logo {
+  margin-right: auto;
+  font-size: 1.5rem;
+}
+
+.navbar li {
+  display: flex;
+  justify-content: center;
+  gap: 1rem 1rem 1rem 1rem;
+  font-size: 1.1rem;
   transition: ease-in-out;
-  transition-duration: 170ms;
+  transition-duration: 120ms;
 }
 
-.nav-item a:hover{
-  color:  #0066ff;
+
+.nav li:hover {
   text-decoration: underline 2px;
-  transform: scale(1.1);
+  transform: scale(1.2);
+}
+
+.navbar .btn {
+  margin-left: auto;
+}
+
+.navbar-collapse {
+  justify-content: center;
+}
+
+.navbar-toggler {
+  margin-left: auto;
 }
 
 .btn{
@@ -57,10 +92,12 @@ body {
 /* Hero */
 
 .hero{
-  margin: 20%;
+  margin: 0 auto;
+  padding: 5%;
   align-items: center;
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* Center the entire hero content */
+  gap: 2rem; /* Add space between the text and image */
 }
 
 .hero h4{
@@ -68,16 +105,22 @@ body {
 }
 
 
-.img img{
-  width: 30%;
+.img img {
+  width: 60%;
+  border-radius: 120px;
   background-position: top;
   background-size: contain;
 }
 
 .img .sosmed img{
   width: 20px;
-  margin: 15px;
+  margin: 0px;
+  margin-left: 55px;
 }
+
+
+/* Services */
+
 
 .card {
   padding: 2em;
@@ -85,4 +128,48 @@ body {
 
 .read-the-docs {
   color: #888;
+}
+
+
+
+/* my projects */
+
+
+.myprojects #detail{
+  margin-left: -0.5%;
+}
+
+
+/* email input */
+.container-fluid .emailInp .container input{
+  background-color: #f8f9fa ;
+  border-radius: 4px;
+  border: 1px solid #E38E49;
+  color: black;
+  width: 400px;
+  flex-direction: column;
+  display: flex;
+  transition: ease-in-out;
+  transition-duration: 300ms;
+}
+
+.container-fluid .emailInp .container input textarea:focus, input:focus{
+  outline: 1px solid #f17b1a;
+  box-shadow: 1px 0px 24px 2px #49bfff;
+}
+
+
+/* footer */
+
+.container-fluid .footer a{
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  transition: transform 0.2s;
+}
+
+.container-fluid .footer a:hover{
+  transform: scale(1.2);
+  color: #0A3981;
+  text-decoration: underline;
 }
