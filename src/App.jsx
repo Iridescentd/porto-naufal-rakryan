@@ -256,7 +256,7 @@ function App() {
       <div className="container">
         <div className="row justify-content-center py-4">
           <div className="col-12 col-sm-3 ms-5">
-            <p>&copy; 2023. All rights reserved.</p>
+            <p>&copy; <span style={{color: "#0f6bf6", fontFamily: "Neue Regrade", fontWeight: "bold"}}>SKYFAL</span> 2024. All rights reserved.</p>
           </div>
         </div>
       </div>
